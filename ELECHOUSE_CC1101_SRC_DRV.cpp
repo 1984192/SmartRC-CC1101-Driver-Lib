@@ -157,10 +157,10 @@ void ELECHOUSE_CC1101::Reset (void)
 *INPUT        :none
 *OUTPUT       :none
 ****************************************************************/
-void ELECHOUSE_CC1101::Init(void)
+void ELECHOUSE_CC1101::Init(uint32_t freq)
 {
   setSpi();
-  SpiStart();                   //spi initialization
+  SpiStart(freq);                   //spi initialization
   digitalWrite(SS_PIN, HIGH);
   digitalWrite(SCK_PIN, HIGH);
   digitalWrite(MOSI_PIN, LOW);
