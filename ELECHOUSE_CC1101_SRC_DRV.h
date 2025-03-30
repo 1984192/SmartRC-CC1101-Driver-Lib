@@ -114,7 +114,7 @@ cc1101 Driver for RC Switch. Mod by Little Satan. With permission to modify and 
 class ELECHOUSE_CC1101
 {
 private:
-  void SpiStart(void);
+  void SpiStart(uint32_t freq = 1000000);
   void SpiEnd(void);
   void GDO_Set (void);
   void GDO0_Set (void);
