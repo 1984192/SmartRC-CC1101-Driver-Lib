@@ -128,7 +128,7 @@ private:
   void Split_MDMCFG2(void);
   void Split_MDMCFG4(void);
 public:
-  void Init(void);
+  void Init(uint32_t freq = 1000000);
   byte SpiReadStatus(byte addr);
   void setSpiPin(byte sck, byte miso, byte mosi, byte ss);
   void addSpiPin(byte sck, byte miso, byte mosi, byte ss, byte modul);
